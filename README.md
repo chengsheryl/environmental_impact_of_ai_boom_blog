@@ -1,0 +1,1 @@
+# environmental_impact_of_ai_boom_blog
