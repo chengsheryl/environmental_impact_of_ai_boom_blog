@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's Actually Paying? | The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="measurement.html">The Measurement Problem</a></li>
+          <li><a href="transparency.html">The Transparency Problem</a></li>
+          <li><a href="regulation.html">The Regulation Gap</a></li>
+          <li><a class="active" href="equity.html">Who's Actually Paying?</a></li>
+          <li><a href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Hint: Probably Not the Companies Profiting From It</h2>
+      </section>
+
+      <figure>
+        <img src="images/equity.png" alt="Electricity bill graphic with data center cost callout" />
+        <figcaption>
+          Here's what's happening to electricity bills in states with the most data centers. CNBC Television. (2025, November 14). [Video].
+          YouTube.
+          <a href="https://www.youtube.com/watch?v=N0ZYtu-vDJQ" target="_blank" rel="noopener noreferrer"
+            >https://www.youtube.com/watch?v=N0ZYtu-vDJQ</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          This is also an equity issue. A Virginia legislative analysis estimated that ratepayers in the state could be paying an additional $37.50
+          per month in electricity costs tied to nearby data center energy demand. The communities hosting this infrastructure are absorbing real
+          financial costs while the economic gains go to tech companies and their shareholders.
+        </p>
+        <p>
+          According to a 2025 Pew Research Center survey of over 5,000 U.S. adults, most people have no idea this is happening. When companies
+          don't disclose their environmental impact, users can't make informed choices. You can't opt out of something you don't know you're funding.
+        </p>
+      </section>
+
+      <aside class="callout">
+        Virginia ratepayers may be paying an additional $37.50/month due to nearby data center energy demand.
+      </aside>
+      <aside class="callout">Most of 5,000+ surveyed U.S. adults were unaware of AI's energy costs. (Pew Research Center, 2025)</aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>

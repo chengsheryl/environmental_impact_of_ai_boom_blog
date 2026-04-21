@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="measurement.html">The Measurement Problem</a></li>
+          <li><a href="transparency.html">The Transparency Problem</a></li>
+          <li><a href="regulation.html">The Regulation Gap</a></li>
+          <li><a href="equity.html">Who's Actually Paying?</a></li>
+          <li><a href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h1>The Hidden Cost of Your AI Tools - And Who Should Actually Be Paying It</h1>
+        <p class="hero-subheading">Every query has a cost most of us never see.</p>
+      </section>
+
+      <figure>
+        <img src="images/home.png" alt="A student using a laptop with AI tools" />
+        <figcaption>
+          Students using AI tools. From "Empowering Student Learning: Navigating Artificial Intelligence in the College Classroom," by M. Parks
+          &amp; M.E. Oslick, 2024, Faculty Focus.
+          <a
+            href="https://www.facultyfocus.com/articles/teaching-with-technology-articles/empowering-student-learning-navigating-artificial-intelligence-in-the-college-classroom/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.facultyfocus.com/articles/teaching-with-technology-articles/empowering-student-learning-navigating-artificial-intelligence-in-the-college-classroom/</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          You've probably used ChatGPT to draft an email, asked Claude to help outline a paper, or let Gemini summarize a dense reading. Maybe all
+          three in the same week. So have hundreds of millions of other people, and that collective behavior is fueling one of the fastest
+          expansions of energy infrastructure in modern history.
+        </p>
+        <p>
+          The International Energy Agency projects that global data center electricity consumption will nearly double by 2030, driven largely by AI
+          growth. This can't be pushed off to something "happening in the future." It's happening now, while most of us have no idea it's connected
+          to our homework and research tools.
+        </p>
+        <p>
+          This blog isn't here to guilt you. It's here to argue that the conversation about AI's environmental impact has been pointed in the wrong
+          direction - at users - when the companies building this infrastructure are the ones with the actual power to change it. Let's dig into
+          why.
+        </p>
+      </section>
+
+      <aside class="callout">
+        Global data center electricity consumption will nearly double by 2030 - driven largely by AI. (IEA, 2024)
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>

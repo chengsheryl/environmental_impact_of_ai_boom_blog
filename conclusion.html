@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>So Now What? | The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="measurement.html">The Measurement Problem</a></li>
+          <li><a href="transparency.html">The Transparency Problem</a></li>
+          <li><a href="regulation.html">The Regulation Gap</a></li>
+          <li><a href="equity.html">Who's Actually Paying?</a></li>
+          <li><a class="active" href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>The Loop - And How to Break It</h2>
+      </section>
+
+      <figure>
+        <img src="images/feedbackloop.png" alt="Feedback loop diagram showing the relationship between corporate disclosure and AI regulation" />
+        <figcaption>Feedback loop diagram showing the relationship between corporate disclosure and AI regulation. Created by Sheryl Cheng using Canva (2026).</figcaption>
+      </figure>
+
+      <section>
+        <p>
+          The measurement gap, the transparency failures, and the regulatory inadequacy aren't three separate problems - they form a feedback loop.
+          No disclosure makes regulation hard. No regulation keeps disclosure voluntary, and AI companies designed the conditions that keep it that
+          way.
+        </p>
+        <p>
+          The most underfunded piece of this puzzle right now is water. Carbon has gotten most of the academic and regulatory attention, but water
+          is scarcer, more locally consequential, and even less studied. De Vries-Gao (2025) offers the most comprehensive analysis available, but
+          even his work is limited by the same disclosure gaps he's critiquing.
+        </p>
+        <p>
+          The goal of this blog isn't to make you feel bad for using AI - it's to make the case that the conversation about responsibility needs to
+          shift. Users can't make environmentally conscious choices when the costs are hidden.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>

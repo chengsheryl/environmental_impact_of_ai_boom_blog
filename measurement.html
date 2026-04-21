@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Measurement Problem | The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="measurement.html">The Measurement Problem</a></li>
+          <li><a href="transparency.html">The Transparency Problem</a></li>
+          <li><a href="regulation.html">The Regulation Gap</a></li>
+          <li><a href="equity.html">Who's Actually Paying?</a></li>
+          <li><a href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>We Don't Even Know How Bad It Is Yet</h2>
+      </section>
+
+      <figure>
+        <img
+          src="images/measurement.png"
+          alt="Infographic comparing training-only vs full lifecycle carbon estimates"
+        />
+        <figcaption>
+          Training vs. inference cost of AI. Kwon, T. (2025). [LinkedIn Post]. LinkedIn.
+          <a
+            href="https://www.linkedin.com/posts/thomas-kwon_most-founders-think-training-a-model-is-the-share-7363590992211427328-KyZS/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://www.linkedin.com/posts/thomas-kwon_most-founders-think-training-a-model-is-the-share-7363590992211427328-KyZS/</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          Before we can talk about solutions, there is a frustrating reality to address first. We genuinely can't fully measure AI's environmental
+          footprint yet.
+        </p>
+        <p>
+          Researchers Luccioni et al. (2023) studied the BLOOM language model and found that training-only carbon estimates, which have been the
+          standard, captured less than half of the model's actual carbon cost. Even more surprising, about 75% of energy during live deployment
+          went toward just keeping the model running in memory, not answering your questions. The server is consuming energy whether you're using it
+          or not.
+        </p>
+        <p>
+          The MIT Climate and Sustainability Consortium put it plainly: AI is developing faster than researchers can measure its tradeoffs. This
+          isn't a political problem or a funding problem. It's a knowledge gap, and it's a big one. You can't regulate what you can't quantify, and
+          you can't quantify what companies won't disclose.
+        </p>
+      </section>
+
+      <aside class="callout">
+        ~75% of energy during live deployment goes toward keeping the model in memory - not answering your questions. (Luccioni et al., 2023)
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>

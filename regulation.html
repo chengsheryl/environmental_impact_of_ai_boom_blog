@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Regulation Gap | The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="measurement.html">The Measurement Problem</a></li>
+          <li><a href="transparency.html">The Transparency Problem</a></li>
+          <li><a class="active" href="regulation.html">The Regulation Gap</a></li>
+          <li><a href="equity.html">Who's Actually Paying?</a></li>
+          <li><a href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>The Rules Exist. They Just Don't Have Any Teeth.</h2>
+      </section>
+
+      <figure>
+        <img src="images/regulation.png" alt="EU AI Act articles 9, 27, and 95 with mandatory vs voluntary indicators" />
+        <figcaption>
+          EU AI Act compliance overview. Aliant Law. (2025, July 3).
+          <a
+            href="https://aliantlaw.com/ai-compliance-revolution-how-international-businesses-must-adapt-to-the-eus-ai-act-in-2025/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >https://aliantlaw.com/ai-compliance-revolution-how-international-businesses-must-adapt-to-the-eus-ai-act-in-2025/</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          The EU AI Act is the most comprehensive AI regulation we have so far. But when it comes to environmental accountability, legal scholars
+          Hacker (2024) and Pagallo (2025) both independently conclude it falls short.
+        </p>
+        <p class="list-intro">Here's the breakdown:</p>
+        <ul class="content-list">
+          <li>Article 9 requires documentation of computational resources - but not energy consumption.</li>
+          <li>
+            Article 27 mandates impact assessments - but only for a narrow class of "high-risk" deployments, and most AI models don't qualify.
+          </li>
+          <li>Article 95 encourages environmental sustainability codes - but participation is entirely voluntary.</li>
+        </ul>
+        <p>
+          There's an irony worth noting. If you apply for a Horizon Europe research grant involving AI, you're required to complete a mandatory
+          environmental self-assessment. But for big companies like Google, Microsoft, and OpenAI? Voluntary codes of conduct only. The bar for
+          researchers is higher than the bar for the companies actually building the tools.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Transparency Problem | The Hidden Cost of Your AI Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-container">
+        <a class="site-title" href="index.html">The Hidden Cost of Your AI Tools</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation menu">Menu</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="measurement.html">The Measurement Problem</a></li>
+          <li><a class="active" href="transparency.html">The Transparency Problem</a></li>
+          <li><a href="regulation.html">The Regulation Gap</a></li>
+          <li><a href="equity.html">Who's Actually Paying?</a></li>
+          <li><a href="conclusion.html">So Now What?</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Big Tech Isn't Telling You the Whole Story</h2>
+      </section>
+
+      <figure>
+        <img src="images/transparency.png" alt="Big tech company logos with redacted environmental report overlay" />
+        <figcaption>
+          How big tech companies control the narratives. Romero, A. (2021, November 11). OneZero.
+          <a href="https://onezero.medium.com/how-big-tech-companies-control-the-narratives-8c71658962ab" target="_blank" rel="noopener noreferrer"
+            >https://onezero.medium.com/how-big-tech-companies-control-the-narratives-8c71658962ab</a
+          >
+        </figcaption>
+      </figure>
+
+      <section>
+        <p>
+          Here's where it gets frustrating. Researcher De Vries-Gao (2025) reviewed the corporate sustainability reports of major AI companies -
+          including Google, Microsoft, Meta, and Amazon - and found that not a single one separates AI workloads from regular computing in their
+          environmental disclosures. That distinction matters enormously because AI tasks are dramatically more energy intensive than conventional
+          ones.
+        </p>
+        <p>
+          When De Vries-Gao cross-referenced Meta's own figures with IEA estimates, he found that indirect water consumption at data centers may be
+          three to four times higher than official estimates suggest. When he flagged this, Google declined to report indirect water use in its
+          Gemini environmental report, saying it doesn't fully control water use at power plants.
+        </p>
+        <p>
+          That reasoning doesn't hold up. The Greenhouse Gas Protocol already requires companies to report indirect CO2, so water should be no
+          different. The pattern here isn't a technical limitation - companies are making this choice.
+        </p>
+      </section>
+
+      <aside class="callout">
+        Indirect water consumption at data centers may be 3-4x higher than official estimates suggest. (De Vries-Gao, 2025)
+      </aside>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">The Hidden Cost of Your AI Tools - Created for academic purposes, 2026.</div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector("#navLinks");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    </script>
+  </body>
+</html>
